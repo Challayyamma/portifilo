@@ -1,12 +1,20 @@
-h1{
+*{
+    margin: 1;
+    padding: 0;
+     box-sizing:border-box ;
+}
+.blink {
+    animation: blinker 0.000000005s linear infinite;
+}
+ h1{
+    font-size: 25px;
     border-top: 2px solid black;
     padding-top: 5px;
     border-right: 2px solid black; 
-    padding-right: 8px;
     border-left: 2px solid black;
-    padding-left: 300px;
     border-bottom: 2px solid black;
     padding-bottom: 5px;
+    text-align:center; 
 }
 #showcase{
     margin: 0;
@@ -15,3 +23,11 @@ h1{
     position: relative;
     overflow: hidden;
 }
+th, td {
+     padding: 15px; 
+    }
+    .space{
+        padding: 5px;
+        background-color: rgb(221, 212, 212);
+        font-size: 15px;
+    }
