@@ -6,6 +6,12 @@
 .blink {
     animation: blinker 0.000000005s linear infinite;
 }
+.side li,a,h2{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+}
  h1{
     font-size: 25px;
     border-top: 2px solid black;
@@ -23,6 +29,13 @@
     position: relative;
     overflow: hidden;
 }
+.button a:hover{
+    font-size:20px;
+    color:brown;
+    background-color: rgb(21, 147, 231);
+    border:3px dotted blue;
+    transition:all 0.5s ease-in-out;
+}
 th, td {
      padding: 15px; 
     }
@@ -30,4 +43,54 @@ th, td {
         padding: 5px;
         background-color: rgb(221, 212, 212);
         font-size: 15px;
+    }
+    .Hamburger span{
+        width:20px;
+        height: 4px;
+        margin:5px 0px;
+        background-color:red;
+        display:block;
+    }
+    .Hamburger span: first-child{
+        animation:one 2s linear infinite;
+    }
+    .Hamburger span: nth-child(2)
+    {
+        animation:two 2s linear infinite;
+    }
+    .Hamburger span: last-child{
+        animation:three 2s linear infinite;
+    }
+    @keyframes one{
+        0%{
+            width:40px;
+        }
+        50%{
+            width: 0px;
+        }
+        100%{
+            width: 45px;
+        }
+    }
+    @keyframes two{
+        0%{
+            width:30px;
+        }
+        50%{
+            width: 0px;
+        }
+        100%{
+            width: 35px;
+        }
+    }
+    @keyframes three{
+        0%{
+            width:50px;
+        }
+        50%{
+            width: 0px;
+        }
+        100%{
+            width: 55px;
+        }
     }
