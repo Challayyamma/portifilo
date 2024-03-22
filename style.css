@@ -6,6 +6,10 @@
 .blink {
     animation: blinker 0.000000005s linear infinite;
 }
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
 .side li,a,h2{
     list-style: none;
     display: inline-block;
@@ -25,24 +29,42 @@
 #showcase{
     margin: 0;
     padding: 0;
-    background: url('bg img-2.jpeg') no-repeat center/cover;
+    background: url('glassbutton.jpeg') no-repeat center/cover; 
     position: relative;
     overflow: hidden;
+}
+.div h2,h3,h4{
+    color:red;
+
 }
 .button a:hover{
     font-size:20px;
     color:brown;
     background-color: rgb(21, 147, 231);
-    border:3px dotted blue;
+    border:3px  blue;
     transition:all 0.5s ease-in-out;
+    font-weight: 600;
+}
+table{
+    color:red;
+    border-radius: 5px;
+    border-color: rgb(137, 137, 247);
+    padding: 3px;
 }
 th, td {
-     padding: 15px; 
+     padding: 20px; 
+     background-color: rgb(115, 135, 252);
     }
     .space{
         padding: 5px;
         background-color: rgb(221, 212, 212);
         font-size: 15px;
+    }
+    .bg{
+        font-size: medium;
+        background-color: rgb(32, 174, 230);
+       display:flex;
+       gap:20px; 
     }
     .Hamburger span{
         width:20px;
@@ -51,14 +73,14 @@ th, td {
         background-color:red;
         display:block;
     }
-    .Hamburger span: first-child{
+    .Hamburger span:first-child{
         animation:one 2s linear infinite;
     }
-    .Hamburger span: nth-child(2)
+    .Hamburger span:nth-child(2)
     {
         animation:two 2s linear infinite;
     }
-    .Hamburger span: last-child{
+    .Hamburger span:last-child{
         animation:three 2s linear infinite;
     }
     @keyframes one{
